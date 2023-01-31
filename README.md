@@ -1,2 +1,1 @@
-# E-Commerce-SvelteKit
- 
+# E-Commerce build with SvelteKit
