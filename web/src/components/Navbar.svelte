@@ -4,11 +4,11 @@
 <body>
 	<div class="navbar bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl" href="/">E-com</a>
+			<button class="btn btn-ghost normal-case text-xl">daisyUI</button>
 		</div>
 		<div class="flex-none">
 			<div class="dropdown dropdown-end">
-				<label class="btn btn-ghost btn-circle" for="indicator">
+				<button tabindex="0" class="btn btn-ghost btn-circle">
 					<div class="indicator">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,11 @@
 						>
 						<span class="badge badge-sm indicator-item">8</span>
 					</div>
-				</label>
-				<div class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+				</button>
+				<button
+					tabindex="0"
+					class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+				>
 					<div class="card-body">
 						<span class="font-bold text-lg">8 Items</span>
 						<span class="text-info">Subtotal: $999</span>
@@ -34,23 +37,20 @@
 							<button class="btn btn-primary btn-block">View cart</button>
 						</div>
 					</div>
-				</div>
+				</button>
 			</div>
 			<div class="dropdown dropdown-end">
-				<label class="btn btn-ghost btn-circle avatar" for="profile">
-					<div class="w-10 rounded-full" id="profile">
-						<img src="/images/profilepic.webp" alt="" />
+				<button tabindex="0" class="btn btn-ghost btn-circle avatar">
+					<div class="w-10 rounded-full">
+						<img src="images/profilepic.webp" alt="Profile" />
 					</div>
-				</label>
+				</button>
 				<ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 					<li>
-						<a class="justify-between" href="#">
-							Profile
-							<span class="badge">New</span>
-						</a>
+						<a class="justify-between" href="/profile">Profile</a>
 					</li>
-					<li><a href="#">Settings</a></li>
-					<li><a href="#">Logout</a></li>
+					<li><a href="/settings">Settings</a></li>
+					<li><a href="/logout">Logout</a></li>
 				</ul>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	import addToCart from 'src/lib/AddToCart';
+	import Cart from '../lib/Cart';
 
 	export let product;
 </script>
@@ -16,7 +16,7 @@
 			</h2>
 			<p>{product.description}</p>
 			<div class="card-actions justify-end">
-				<button class="btn btn-primary" on:click={addToCart(product.id)}>Lägg i varukorg</button>
+				<button class="btn btn-primary" on:click={Cart.Add(product.id)}>Lägg i varukorg</button>
 			</div>
 		</div>
 	</div>
